@@ -1,6 +1,5 @@
 function makeFibo() {
-  let memo = [0, 1]; // Initial Fibo values 0 and 1
-  
+  let memo = [0, 1]; 
   return function (num) {
     if (num < memo.length) {
       return {fibo: num, value: memo[num], iterations: 0, directLookup: 'yes'};
@@ -27,3 +26,4 @@ console.log(x(9));
 console.log(y(9));
 console.log(y(5));
 console.log(y(10));
+
